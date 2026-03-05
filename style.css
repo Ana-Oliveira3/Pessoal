@@ -427,3 +427,27 @@ footer {
     .rsvp-form-container { padding: 30px; }
     .rsvp-buttons { flex-direction: column; }
 }
+
+/* Estilo do Campo de Nome RSVP */
+.input-nome {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-nome:focus {
+    border-color: #b08d57;
+    box-shadow: 0 0 5px rgba(176, 141, 87, 0.3);
+}
+
+/* Esconde o formulário depois de enviado */
+#rsvp-form.hidden {
+    display: none;
+}

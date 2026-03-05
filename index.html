@@ -81,16 +81,24 @@
                 <p class="declaration-text">"Mais do que um convite, este é um pedaço do nosso amor que compartilhamos com você. Você faz parte da nossa história e não poderíamos imaginar este dia sem sua presença."</p>
                 
                 <div class="rsvp-form-container">
-                    <h3>Confirme sua Presença</h3>
-                    <p>Você poderá vir celebrar conosco?</p>
-                    <div class="rsvp-buttons">
-                        <button id="btn-sim" class="btn-rsvp">Sim, estarei lá!</button>
-                        <button id="btn-talvez" class="btn-rsvp btn-maybe">Ainda não sei</button>
-                    </div>
-                    <div id="rsvp-message" class="hidden">
-                        <p class="success-message">Uau! Ficamos muito felizes em saber! ❤️</p>
-                    </div>
-                </div>
+    <h3>Confirme sua Presença</h3>
+    <p>Você poderá vir celebrar conosco?</p>
+    
+    <form id="rsvp-form" action="https://formspree.io/f/xzdjpvvj" method="POST">
+        <input type="text" name="Nome do Convidado" placeholder="Digite seu nome completo" required class="input-nome">
+        
+        <input type="hidden" name="Resposta" id="resposta-input" value="">
+
+        <div class="rsvp-buttons">
+            <button type="submit" id="btn-sim" class="btn-rsvp">Sim, estarei lá!</button>
+            <button type="submit" id="btn-talvez" class="btn-rsvp btn-maybe">Ainda não sei</button>
+        </div>
+    </form>
+
+    <div id="rsvp-message" class="hidden">
+        <p class="success-message">Uau! Ficamos muito felizes em saber! ❤️</p>
+    </div>
+</div>
             </div>
         </div>
     </section>
